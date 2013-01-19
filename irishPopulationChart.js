@@ -156,8 +156,11 @@
                     renderer: function( v ){
                         // get the record
                         var record = pieChartStore.findRecord( 'name', v );
+                        
                         // update the title
-                        pieChart.up().setTitle( 'Male v Female for ' + record.get('year') );
+                        // this line is calling an "Maximum call stack size exceeded" error.  Commenting out for now.
+                        // pieChart.up().setTitle( 'Male v Female for ' );
+                        
                         // return the label
                         return v + '\n' + record.get('value') ;
                     }
