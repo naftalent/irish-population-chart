@@ -172,7 +172,7 @@
         var grid = Ext.create( 'Ext.grid.Panel', {
             region: 'west',
             title: 'Population Data',
-            width: 450,
+            width: 350,
             margin: '0 10 0 0',
             store: store,
             columns: [{
@@ -211,7 +211,7 @@
         Ext.create('Ext.panel.Panel', {
             title: 'Irish Population 1901 - 2006',
             frame: true,
-            width: 800,
+            width: 700,
             height: 550,
             renderTo: renderTo,
             layout: 'border',
