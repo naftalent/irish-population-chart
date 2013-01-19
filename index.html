@@ -11,7 +11,14 @@
     </style>
 </head>
 <body>
+    <div id="container"></div>
     <script src='http://cdn.sencha.io/ext-4.1.0-gpl/ext-all.js'></script>
     <script src='irishPopulationChart.js'></script>
+    <script>
+        Ext.onReady(function(){
+            // launch the app
+            howlin.apps.irishPopulationChart();
+        });
+    </script>
 </body>
 </html>
